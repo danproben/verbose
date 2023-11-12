@@ -5,17 +5,11 @@ import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import InputGroup from 'react-bootstrap/InputGroup';
 import AddWord from "../AddWord/AddWord";
-import plus from "./plus.png"
-import dotenv from 'dotenv'
 
-dotenv.config( { path : 'frontend/.env' } );
-
-const XRapidAPIKey = process.env.XRapidAPIKey;
 
 import { useState } from "react";
 
 function SearchBar({populateDefinition}) {
-
 
 
 	const submitWord = async (input) => {
@@ -28,7 +22,7 @@ function SearchBar({populateDefinition}) {
 			const options = {
 				method: 'GET',
 				headers: {
-					'X-RapidAPI-Key': {XRapidAPIKey},
+					'X-RapidAPI-Key': `${process.env.REACT_APP_RAPID_API_KEY}`,
 					'X-RapidAPI-Host': 'wordsapiv1.p.rapidapi.com'
 				}
 			};
