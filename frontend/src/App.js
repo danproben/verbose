@@ -1,20 +1,21 @@
-import Stack from 'react-bootstrap/Stack';
+import { Routes, Route } from "react-router-dom";
 import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Column1 from './components/Column1/Column1';
-import Column2 from './components/Column2/Column2';
+import Home from './pages/Home/Home.jsx'
+import Login from './pages/Login/Login.jsx'
 
 function App() {
 
-  
-
-  return (
-    <Stack className='hstack' direction="horizontal" gap={5}>
-      <div className="column1"><Column1 /></div>
-      <div className="column2 ms-auto"><Column2 /></div>
-      <div className="column3 ms-auto">Third item</div>
-    </Stack>
-  );
+	return (
+        <>
+            <Routes>
+				<Route path="" element={<Login />} />
+                <Route path="/" element={<Login />} />
+				<Route path="/login" element={<Login />} />
+                <Route path="/home" element={<Home />} />
+            </Routes>
+        </>
+	);
 }
 
 export default App;

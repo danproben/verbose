@@ -5,3 +5,7 @@
 .dropdownContainer {
  margin: 0;
 }
+
+.modal {
+    background-color: black;
+}

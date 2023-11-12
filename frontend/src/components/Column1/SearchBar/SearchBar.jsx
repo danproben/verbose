@@ -6,7 +6,6 @@ import Form from 'react-bootstrap/Form';
 import InputGroup from 'react-bootstrap/InputGroup';
 import AddWord from "../AddWord/AddWord";
 
-
 import { useState } from "react";
 
 function SearchBar({populateDefinition}) {
@@ -47,9 +46,10 @@ function SearchBar({populateDefinition}) {
 			<Form.Control
 			type="input"
 			id="searchBar"
-			placeholder="Search"
+			placeholder="Search a word"
 			size="sm"
 			onKeyDown={submitWord}
+			className="shadow-none"
 			/>
 			<AddWord />
 		  </InputGroup>

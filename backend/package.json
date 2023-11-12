@@ -1,0 +1,31 @@
+{
+  "name": "verbose",
+  "version": "1.0.0",
+  "description": "vocabulary building website",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon Server/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danproben/verbose.git"
+  },
+  "keywords": [
+    "vocabulary",
+    "definition",
+    "dictionary"
+  ],
+  "author": "Daniel Proben",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/danproben/verbose/issues"
+  },
+  "homepage": "https://github.com/danproben/verbose#readme",
+  "dependencies": {
+    "@supabase/supabase-js": "^2.38.4",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "nodemon": "^3.0.1"
+  }
+}

@@ -1,10 +1,10 @@
 .vstack2 {
     color: white;
     height: 200px;
-    background-color: #242731;
+    background-color: #2427319e;
     padding: 10%;
     height: 100%;
     box-sizing: border-box;
-    border-radius: 15px;
+    border-radius: 10px;
     position: relative;
 }

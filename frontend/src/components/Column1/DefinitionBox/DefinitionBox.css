@@ -14,21 +14,27 @@
 
 }
 
-.partOfSpeech {
-    display: inline;
-    font-weight: 100;
-    text-align: left;
-
-}
-
 .definitions {
     margin-top: 5%;
     text-align: left;
 
 }
 
-.definition {
+.partOfSpeech {
+    display: inline;
+    font-weight: 100;
+    text-align: left;
+}
 
+.addButton {
+    text-align: center;
+    margin-right: 2%;
+    display: inline;
+    text-align: left;
+    cursor: pointer;
+}
+
+.definition {
     display: inline;
     text-align: left;
 }

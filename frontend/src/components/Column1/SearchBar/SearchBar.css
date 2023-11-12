@@ -1,0 +1,10 @@
+#searchBar {
+    color: white;
+    
+    background-color: #242731;
+    border-color: #f6c344;
+}
+
+#searchBar::placeholder {
+    color: gray;
+}

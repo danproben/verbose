@@ -1,0 +1,71 @@
+.loginContainer {
+    position: absolute;
+
+    color: white;
+    text-align: center;
+    width: 20%;
+}
+
+.emailContainer, .passwordContainer {
+    width: 100%;
+    margin-top: 3%;
+}
+
+.mainContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+
+h1 {
+    margin-bottom: 8%;
+}
+
+.websiteTitle {
+    color: #f6c344;
+    margin: 3%;
+    font-size: 150%;
+    font-family: Oleo Script;
+}
+
+.loginButton {
+    width: 100%;
+}
+
+#emailInput, #passwordInput {
+    border-radius: 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 1px solid #f6c344;
+    color: white;
+    background-color: black;
+    border-color: #f6c344;
+}
+
+#emailInput::placeholder, #passwordInput::placeholder {
+    color: gray;
+}
+
+.noAccount {
+    display: block;
+}
+
+.signUp {
+    display: inline;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.forgotPassword {
+    font-size: 80%;
+    cursor: pointer;
+    text-align: left;
+    margin-top: 5%;
+    margin-bottom: 10%;
+}
+
+.noAccount, .signUp {
+    margin: 5%;
+}
