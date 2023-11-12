@@ -1,0 +1,46 @@
+.definitionBox {
+    margin: 2%;
+    overflow-y: scroll;
+    font-size: 75%;
+}
+
+.definitionBox::-webkit-scrollbar{
+    display: none;
+}
+
+.word {
+    margin: 3%;
+    font-weight: bold;
+
+}
+
+.partOfSpeech {
+    display: inline;
+    font-weight: 100;
+    text-align: left;
+
+}
+
+.definitions {
+    margin-top: 5%;
+    text-align: left;
+
+}
+
+.definition {
+
+    display: inline;
+    text-align: left;
+}
+
+.synonyms {
+    text-align: left;
+}
+
+.synonym {
+    font-weight: 300;
+    display: inline-block;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
