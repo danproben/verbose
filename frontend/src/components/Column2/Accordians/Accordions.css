@@ -1,0 +1,38 @@
+.accordion-item {
+    color: white;
+    background-color: unset;
+    background-color: #2427319e !important;
+}
+
+.accordion-body {
+    font-size: 11px;
+    text-align: left;
+}
+
+.accordion-button {
+    color: white;
+    padding: 3%;
+    font-size: 12px;
+    color: white;
+    background-color: unset;
+}
+
+.accordion-button:focus {
+    color: white;
+    box-shadow: none;
+}
+
+.accordion-button:not(.collapsed){
+    color: white;
+    background-color: transparent;
+    box-shadow: none;
+}
+
+.accordion-button::after {
+    background-image: initial;
+}
+
+.accordion-button:not(.collapsed)::after {
+    background-image: initial;
+}
+

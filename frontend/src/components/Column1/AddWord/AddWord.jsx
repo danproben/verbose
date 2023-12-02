@@ -1,5 +1,4 @@
 import React from "react";
-import plus from "./rightArrow.png"
 import "./AddWord.css"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Button from "react-bootstrap/esm/Button";

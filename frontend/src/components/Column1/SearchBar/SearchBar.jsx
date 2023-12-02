@@ -1,15 +1,11 @@
 import React from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "./SearchBar.css"
-import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import InputGroup from 'react-bootstrap/InputGroup';
 import AddWord from "../AddWord/AddWord";
 
-import { useState } from "react";
-
 function SearchBar({populateDefinition}) {
-
 
 	const submitWord = async (input) => {
 
@@ -31,9 +27,6 @@ function SearchBar({populateDefinition}) {
 				const result = await response.json();
 				populateDefinition(result);
 			} catch (error) {
-				const issue = {
-					
-				}
 				populateDefinition(error.message);
 			}
 		}
@@ -51,7 +44,7 @@ function SearchBar({populateDefinition}) {
 			onKeyDown={submitWord}
 			className="shadow-none"
 			/>
-			<AddWord />
+			{/* <AddWord /> */}
 		  </InputGroup>
     )
 }

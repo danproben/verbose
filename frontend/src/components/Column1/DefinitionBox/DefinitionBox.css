@@ -17,7 +17,6 @@
 .definitions {
     margin-top: 5%;
     text-align: left;
-
 }
 
 .partOfSpeech {
@@ -27,6 +26,7 @@
 }
 
 .addButton {
+    font-size: 1rem;
     text-align: center;
     margin-right: 2%;
     display: inline;

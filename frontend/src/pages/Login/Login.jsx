@@ -1,10 +1,36 @@
 import React from 'react';
 import Button from 'react-bootstrap/esm/Button';
 import Form from 'react-bootstrap/Form'
+import { useNavigate } from "react-router-dom";
 import './Login.css'
+import { supabase } from '../../database';
 
 
 function Login(props) {
+
+    const navigate = useNavigate();
+
+    const login = async () => {
+        const email = document.getElementById("emailInput").value;
+        const password = document.getElementById("passwordInput").value;
+
+        try {
+            const { user, error } = await supabase.auth.signInWithPassword({
+              email: email,
+              password: password,
+            });
+    
+            if (error) {
+              console.error('Login error:', error);
+            } else {
+              console.log('Logged in as:', user);
+              navigate('/home');
+            }
+          } catch (error) {
+            console.error('Login error:', error.message);
+          }
+    }
+
     return (
         <div className='mainContainer'>
             <div className='loginContainer'>
@@ -29,10 +55,10 @@ function Login(props) {
                     />
                 </div>
                 <div className='forgotPassword'>Forgot password?</div>
-                <Button className='loginButton' variant="outline-warning">
+                <Button className='loginButton' variant="outline-warning" onClick={login}>
                     Login
                 </Button>
-                <div className='noAccount'>Don't have an account yet? <div className='signUp'>Sign Up</div></div>
+                <div className='noAccount'>Don't have an account yet? <div className='signUp' onClick={() => navigate('/register')}>Sign Up</div></div>
             </div>
         </div>
     );

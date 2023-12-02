@@ -1,11 +1,13 @@
 .listDropdown {
+    box-shadow: none;
     width: 100%;
 }
 
 .dropdownContainer {
- margin: 0;
+    box-shadow: none !important;
+    margin: 0;
 }
 
-.modal {
-    background-color: black;
+.dropdownButton:active {
+    box-shadow: none;
 }

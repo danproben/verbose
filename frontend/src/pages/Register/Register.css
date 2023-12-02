@@ -6,7 +6,7 @@
     width: 20%;
 }
 
-.emailContainer, .passwordContainer {
+.emailContainer, .passwordContainer, .confirmPasswordContainer {
     width: 100%;
     margin-top: 3%;
 }
@@ -30,11 +30,12 @@ h1 {
     font-family: Oleo Script;
 }
 
-.loginButton {
+.registerButton {
+    margin-top: 10%;
     width: 100%;
 }
 
-#emailInput, #passwordInput {
+#registerEmailInput, #registerPasswordInput, #confirmRegisterPasswordInput, #nameInput {
     border-radius: 0;
     box-sizing: border-box;
     border: none;
@@ -45,26 +46,8 @@ h1 {
 }
 
 
-#emailInput::placeholder, #passwordInput::placeholder {
+#registerEmailInput::placeholder, #registerPasswordInput::placeholder, #confirmRegisterPasswordInput::placeholder, #nameInput::placeholder {
     color: gray;
-}
-
-.noAccount {
-    display: block;
-}
-
-.signUp {
-    display: inline;
-    font-weight: bold;
-    cursor: pointer;
-}
-
-.forgotPassword {
-    font-size: 80%;
-    cursor: pointer;
-    text-align: left;
-    margin-top: 5%;
-    margin-bottom: 10%;
 }
 
 .noAccount, .signUp {
