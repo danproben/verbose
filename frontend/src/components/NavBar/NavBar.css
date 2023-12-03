@@ -2,13 +2,15 @@
     height: 4rem;
     width: 100%;
     background-color: #2427319e;
+    text-align: center;
 }
 
 .logo {
+    cursor: pointer;
     margin: 0;
     padding: 0;
-    margin-left: 2rem;
     margin-top: 1rem;
+    margin-left: 4rem;
     display: inline-block;
     color: #f6c344;
     font-size: 150%;
@@ -17,9 +19,20 @@
 
 .welcomeMessage {
     margin: 0;
-    margin-top: 1rem;
-    margin-right: 2rem;
+    margin-left: 2rem;
+    margin-top: 1.25rem;
     padding: 0;
     color: white;
+    float: left;
+}
+
+.helpMenu {
+    margin: 0;
+    margin-top: 1.25rem;
+    margin-right: 2rem;
+    padding: 0;
+    font-weight: bold;
+    color: white;
     float: right;
+    cursor: pointer;
 }

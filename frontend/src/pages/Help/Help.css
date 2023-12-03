@@ -1,0 +1,18 @@
+.imgSet {
+    width: 20rem;
+    display: block;
+    margin: 0 auto;
+    margin-top: 1rem;
+}
+
+.instructionsContainer {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+
+.instruction {
+    margin-top: 1rem;
+}

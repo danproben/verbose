@@ -1,0 +1,53 @@
+.wotdContainer {
+    position: relative;
+    width: 100%;
+    height: 43%;
+    background-color: #2427319e;
+    border-radius: 10px;
+    padding: 0;
+}
+
+.column3A-title{
+    margin-top: 1rem;
+    color: #f6c344;
+    font-size: 2rem;
+    font-family: Oleo Script;
+    
+}
+
+.wordContainer {
+    margin-top: 0.5rem;
+    font-style: italic;
+    font-size: 1.5rem;
+    color: white;
+}
+
+.partOfSpeechContainer {
+    margin-top: 1rem;
+    color: white;
+}
+
+.definitionContainer {
+    width: 100%;
+    text-wrap: wrap;
+    margin: 0;
+    color: white;
+}
+
+.wordDefinitionContainer {
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.refreshImg {
+    cursor: pointer;
+    width: 1rem;
+}
+
+.refreshImgContainer {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin-right: 1.5rem;
+    margin-bottom: 1.5rem;
+}

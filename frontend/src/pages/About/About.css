@@ -1,0 +1,30 @@
+.itemTitle {
+    margin: 0;
+    color: #f6c344;
+    font-size: 2rem;
+    font-family: Oleo Script;
+}
+
+.itemContent {
+    margin-top: 1rem;
+    text-wrap: wrap;
+    color: white;
+}
+
+.architecture, .businessLogic, .databaseDesign {
+    text-wrap: wrap;
+    width: 20rem;
+    text-align: left;
+    margin-right: 3rem;
+    margin-left: 3rem;
+    display: inline-block;
+}
+
+.aboutContainer {
+    margin-top: 5rem;
+    text-align: center;
+}
+
+.dbImg {
+    width: 15rem;
+}

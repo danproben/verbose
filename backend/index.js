@@ -37,10 +37,6 @@ app.get('/lists/:uid', async (req, res) => {
 		    .eq('uuid', UUID)
         .order('id', { ascending: true })
   
-        // filter the listTitle since that is really all we make use of on the frontend
-        // Lists.map((item, index) => {
-        //   Lists[index] = item.listTitle
-        // })
 
         res.send(Lists);
       } catch (err) {
@@ -74,7 +70,7 @@ app.get('/getWords/:listID', async (req, res) => {
   try {
       let { data: Words, error } = await supabase
       .from('Definitions')
-      .select('word, definition, partOfSpeech')
+      .select('word, definition, partOfSpeech, id')
       .eq('listId', listID)
 
       res.send(Words);
@@ -116,6 +112,68 @@ app.post('/addWord', async (req, res) => {
   } catch (err) {
     console.log(err)
   }
+})
+
+app.post('/removeList', async (req, res) => {
+
+  const listID = req.body.listID;
+
+  console.log(listID)
+
+  const { error } = await supabase
+    .from('Lists')
+    .delete()
+    .eq('id', listID)
+
+})
+
+app.get('/removeWord/:id', async (req, res) => {
+    const id = req.params.id;
+
+    const { error } = await supabase
+    .from('Definitions')
+    .delete()
+    .eq('id', id)
+
+    console.log(`Deleting ${id}`)
+})
+
+app.get('/wordOfTheDay/:uuid', async (req, res) => {
+
+	const userid = req.params.uuid;
+
+	try {
+		
+		let { data, error } = await supabase
+		.rpc('wordoftheday', {
+		userid
+		})
+		if (error) console.error(error)
+		else console.log(data)
+  
+		res.send(data);
+	} catch (err) {
+		console.log(err)
+	}
+})
+
+app.get('/getQuizWords/:uuid', async (req, res) => {
+
+	const userid = req.params.uuid;
+
+	try {
+	
+		let { data, error } = await supabase
+		.rpc('getfourwords', {
+		  userid
+		})
+		if (error) console.error(error)
+		else console.log(data)
+  
+		res.send(data);
+	} catch (err) {
+		console.log(err)
+	}
 
 })
 

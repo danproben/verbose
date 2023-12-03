@@ -7,6 +7,12 @@
 .accordion-body {
     font-size: 11px;
     text-align: left;
+    padding: 0;
+}
+
+.accordionDefinition {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem
 }
 
 .accordion-button {
@@ -36,3 +42,30 @@
     background-image: initial;
 }
 
+.accordionContainer {
+    margin: 0%;
+    overflow-y: scroll;
+    font-size: 75%;
+}
+
+.accordionContainer::-webkit-scrollbar{
+    display: none;
+}
+
+.removeButton {
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.trashImg {
+    width: 15px;
+    float: right;
+    cursor: pointer;
+}
+
+.trash {
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    padding-right: 0.5rem;
+    margin-bottom: 0.5rem;
+}

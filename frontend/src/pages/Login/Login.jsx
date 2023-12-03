@@ -54,7 +54,6 @@ function Login(props) {
                     className="shadow-none"
                     />
                 </div>
-                <div className='forgotPassword'>Forgot password?</div>
                 <Button className='loginButton' variant="outline-warning" onClick={login}>
                     Login
                 </Button>

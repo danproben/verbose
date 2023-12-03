@@ -6,7 +6,7 @@ import "./Column1.css"
 import { useState } from "react";
 
 
-function Column1({listId}) {
+function Column1({listId, passWordToHome}) {
 
     const [word, setWord] = useState([])
 
@@ -31,6 +31,7 @@ function Column1({listId}) {
                 "Content-type": "application/json; charset=UTF-8"
             }
         })
+        passWordToHome(word.word, partOfSpeech, definition)
     }
     
     return (

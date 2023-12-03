@@ -6,34 +6,13 @@ import Accordions from "./Accordians/Accordions";
 import { useState } from "react";
 
 
-function Column2({passListIdHome}) {
+function Column2({passListIdHome, words, selectList, removeWord}) {
 
-    const [selectedListID, setSelectedListID] = useState("My Lists");
-    const [words, setWords] = useState([])
-
-    const selectList = (listID) => {
-
-        passListIdHome(listID);
-
-        fetch(`http://localhost:3002/getWords/${listID}`)
-            .then((res) => {
-                return res.json()
-            })
-            .then((data) => {
-                console.log(data)
-                setWords(data)
-            })
-            .catch((error) => {
-                console.log(error);
-            });
-    }
-
-    setWords([...words, newWord])
 
     return (
             <Stack className='vstack2' gap={3}>
                 <ListSelector  passToColumn2={selectList} />
-                <Accordions words={words} className="accordion" />
+                <Accordions words={words} removeWord={removeWord} className="accordion" />
             </Stack>
     );
 }
