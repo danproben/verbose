@@ -37,7 +37,6 @@ app.get('/lists/:uid', async (req, res) => {
 		    .eq('uuid', UUID)
         .order('id', { ascending: true })
   
-
         res.send(Lists);
       } catch (err) {
         console.log(err)

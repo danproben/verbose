@@ -15,16 +15,19 @@
     text-wrap: wrap;
     width: 20rem;
     text-align: left;
-    margin-right: 3rem;
-    margin-left: 3rem;
-    display: inline-block;
+    display: inline;
 }
 
 .aboutContainer {
-    margin-top: 5rem;
+    margin: 5rem;
     text-align: center;
 }
 
 .dbImg {
-    width: 15rem;
+    width: 100%;
+}
+
+.storedProcedure {
+    margin: 1rem;
+    width: 100%;
 }
